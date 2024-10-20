@@ -17,31 +17,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        enableEdgeToEdge()
-        setContent {
-            MOIT114LISTIFYMobileDevFundamentalsTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
         }
     }
-
-    override fun onStart() {
-        super.onStart()
-        println("onStart")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        println("onResume")
-    }
-
-
-}
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
