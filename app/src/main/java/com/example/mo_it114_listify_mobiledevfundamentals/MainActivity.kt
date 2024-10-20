@@ -16,6 +16,7 @@ import com.example.mo_it114_listify_mobiledevfundamentals.ui.theme.MOIT114LISTIF
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         enableEdgeToEdge()
         setContent {
             MOIT114LISTIFYMobileDevFundamentalsTheme {
@@ -28,6 +29,18 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+        println("onStart")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        println("onResume")
+    }
+
+
 }
 
 @Composable

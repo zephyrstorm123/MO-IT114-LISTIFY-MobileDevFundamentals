@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">MO-IT114-LISTIFY-MobileDevFundamentals</string>
+    <string name="app_name">My Application</string>
+    <string name="grocery_planning_made_simple">\"Grocery Planning, Made Simple\"</string>
+    <string name="image_of_a_person">Image of a person</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="lgnBtn">Login</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="register">Create Account</string>
 </resources>
