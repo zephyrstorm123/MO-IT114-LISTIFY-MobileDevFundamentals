@@ -8,4 +8,8 @@
     <string name="lgnBtn">Login</string>
     <string name="forgotPassword">Forgot Password?</string>
     <string name="register">Create Account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="confirmPw">Confirm Password</string>
+    <string name="signUp">Sign Up</string>
 </resources>
