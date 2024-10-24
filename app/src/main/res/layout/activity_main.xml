@@ -43,11 +43,10 @@
         android:hint="@string/username"
         android:gravity="center"
         android:textColor="@color/black"
-        android:textColorHint="@color/white"
-        android:background="@drawable/rounded_corner"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_corner_green_outline"
         android:layout_marginTop="40dp"
         android:textSize="16sp"
-        android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
         />
     <EditText
@@ -55,12 +54,11 @@
         android:layout_height="60sp"
         android:hint="@string/password"
         android:gravity="center"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:background="@drawable/rounded_corner"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_corner_green_outline"
         android:layout_marginTop="16dp"
         android:textSize="16sp"
-        android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
         />
 
@@ -75,7 +73,7 @@
         android:textColor="@color/white"
         android:background="@drawable/rounded_corner_grey"
         android:layout_marginTop="16dp"
-        android:elevation="10dp"
+        android:elevation="30dp"
         android:fontFamily="@font/poppins_light"
         />
 
