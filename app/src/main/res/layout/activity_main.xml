@@ -43,10 +43,11 @@
         android:hint="@string/username"
         android:gravity="center"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:background="@drawable/rounded_corner_green_outline"
+        android:textColorHint="@color/white"
+        android:background="@drawable/rounded_corner"
         android:layout_marginTop="40dp"
         android:textSize="16sp"
+        android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
         />
     <EditText
@@ -54,11 +55,12 @@
         android:layout_height="60sp"
         android:hint="@string/password"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:background="@drawable/rounded_corner_green_outline"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/rounded_corner"
         android:layout_marginTop="16dp"
         android:textSize="16sp"
+        android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
         />
 
@@ -73,12 +75,11 @@
         android:textColor="@color/white"
         android:background="@drawable/rounded_corner_grey"
         android:layout_marginTop="16dp"
-        android:elevation="30dp"
+        android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
         />
 
     <TextView
-        android:id="@+id/forgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -89,7 +90,6 @@
         />
 
     <Button
-        android:id="@+id/createAcctBtn"
         android:layout_width="240dp"
         android:layout_height="40dp"
         android:layout_marginTop="70sp"
