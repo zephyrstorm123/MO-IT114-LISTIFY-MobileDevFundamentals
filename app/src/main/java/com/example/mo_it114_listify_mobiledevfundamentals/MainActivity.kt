@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import android.content.Intent
+import android.widget.TextView
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,6 +15,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mo_it114_listify_mobiledevfundamentals.ui.theme.MOIT114LISTIFYMobileDevFundamentalsTheme
+import org.w3c.dom.Text
+import android.content.Context
+import android.widget.EditText
+import android.widget.Toast
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.io.IOException
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,14 +29,20 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         val createAccountBtn: Button = findViewById(R.id.createAcctBtn)
+        val forgotPasswordBtn: TextView = findViewById<TextView>(R.id.forgotPassword)
 
-        // Set an OnClickListener on the "Forgot Password" Button
+        // Set an OnClickListener on the "Create Account" Button
         createAccountBtn.setOnClickListener {
             // Create an Intent to start the CreateAccountActivity
             val intent = Intent(this, CreateAccountActivity::class.java)
             startActivity(intent)
         }
 
+        // Set an OnClickListener on the "Forgot Password" Button
+        forgotPasswordBtn.setOnClickListener {
+            // Create an Intent to start the ForgotPasswordActivity
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -48,4 +62,5 @@ fun GreetingPreview() {
     MOIT114LISTIFYMobileDevFundamentalsTheme {
         Greeting("Android")
     }
+}
 }
