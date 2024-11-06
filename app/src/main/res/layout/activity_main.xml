@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:layout_marginTop="-30sp"
+    android:layout_width="360in"
+    android:layout_height="803in"
     android:background="@color/white"
-    >
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DEF4E1"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="#d9d9d9"
+        android:padding="16dp"
+        android:orientation="horizontal" >
+
+
+    </LinearLayout>
+
 
     <ImageView
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:contentDescription="@string/image_of_a_person"
-        android:src="@drawable/listify_logo" />
+        android:id="@+id/imageView3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:src="?android:attr/alertDialogIcon" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -104,8 +126,8 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16sp" />
-
-
 </LinearLayout>
 
+    </LinearLayout>
 
+</RelativeLayout>
