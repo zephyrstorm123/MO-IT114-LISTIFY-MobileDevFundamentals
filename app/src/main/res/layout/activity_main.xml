@@ -19,21 +19,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
         android:layout_marginTop="8dp"
         android:text="@string/grocery_planning_made_simple"
         android:textColor="@color/grey"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:layout_marginVertical="20dp"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/login"
-        android:textColor="@color/listify_green"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textColor="@color/listify_green"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:layout_width="280sp"
@@ -45,6 +47,7 @@
         android:background="@drawable/rounded_corner_green_outline"
         android:layout_marginTop="40dp"
         android:textSize="16sp"
+        android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
         />
     <EditText
@@ -52,11 +55,13 @@
         android:layout_height="60sp"
         android:hint="@string/password"
         android:gravity="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textColorHint="@color/black"
+        android:autofillHints="@string/password"
         android:background="@drawable/rounded_corner_green_outline"
         android:layout_marginTop="16dp"
         android:textSize="16sp"
+        android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
         />
 
@@ -64,17 +69,19 @@
         android:id="@+id/loginBtn"
         android:layout_width="280sp"
         android:layout_height="60sp"
-        android:layout_marginTop="16dp"
+        android:text="@string/lgnBtn"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
         android:background="@drawable/rounded_corner_grey"
+        android:layout_marginTop="16dp"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_light"
-        android:gravity="center"
-        android:text="@string/lgnBtn"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        />
 
     <TextView
+        android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -85,6 +92,7 @@
         />
 
     <Button
+        android:id="@+id/createAcctBtn"
         android:layout_width="240dp"
         android:layout_height="40dp"
         android:layout_marginTop="70sp"

@@ -12,4 +12,9 @@
     <string name="email">Email</string>
     <string name="confirmPw">Confirm Password</string>
     <string name="signUp">Sign Up</string>
+    <string name="forgetPw_header">Forgot Password</string>
+    <string name="forgetPw_text">Enter your email address and we will send you a link to reset your password</string>
+    <string name="sendEmail">Send Email</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
 </resources>
