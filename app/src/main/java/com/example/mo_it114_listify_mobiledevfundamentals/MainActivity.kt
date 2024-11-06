@@ -15,13 +15,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mo_it114_listify_mobiledevfundamentals.ui.theme.MOIT114LISTIFYMobileDevFundamentalsTheme
-import org.w3c.dom.Text
 import android.content.Context
 import android.widget.EditText
 import android.widget.Toast
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import java.io.IOException
+
+data class User(val username: String, val password: String)
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
